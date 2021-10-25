@@ -1,0 +1,235 @@
+html {
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 0, 0, 0.829);
+  font-size: 125%;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #eeeeee;
+  display: -ms-grid;
+  display: grid;
+}
+
+html body #header {
+  width: 100%;
+  padding: 20px 10px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  background-color: #eeeeee;
+  top: 0;
+  z-index: 99;
+}
+
+html body #header #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body #header #nav img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+html body #header #nav #nav-bar .nav-bar {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin: 0px 30px;
+}
+
+html body #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 80px auto;
+  width: 100%;
+  max-width: 200px;
+}
+
+html body #form label {
+  font-size: 15px;
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  border-radius: 50px 0 0 50px;
+}
+
+html body #form #email {
+  padding: 10px 20px;
+  display: inline;
+}
+
+html body #form #submit {
+  border-radius: 0 50px 50px 0;
+  background-color: black;
+  color: white;
+  font-size: 11px;
+  border: black 2px solid;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+
+html body #features-title {
+  text-align: center;
+  max-width: 80%;
+  width: 100%;
+  margin: 30px auto;
+}
+
+html body #features {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  max-width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+html body #features .feature {
+  border: black 2px solid;
+  margin: 0px 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+
+html body #how-it-work {
+  text-align: center;
+  max-width: 80%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+html body #video {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+html body #products-title {
+  text-align: center;
+  max-width: 80%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+html body #products {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  max-width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+html body #products .product {
+  border: black 2px solid;
+  margin: 0px 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 100px;
+}
+
+html body #products .product p {
+  margin: 50px;
+}
+
+html body #products .product a {
+  background-color: yellow;
+  padding: 10px 50px;
+  text-decoration: none;
+  color: black;
+  border: black 2px solid;
+  border-radius: 100px;
+}
+
+@media (max-width: 1000px) {
+  html body #header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html body #header #nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  html body #header #nav img {
+    -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-pixelated;
+        image-rendering: pixelated;
+  }
+  html body #header #nav #nav-bar .nav-bar {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 0px 30px;
+  }
+  html body #form {
+    position: relative;
+    top: 90px;
+  }
+  html body #features {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  html body #features .feature {
+    margin: 20px 0px;
+  }
+  html body #video {
+    width: 80vw;
+  }
+  html body #products {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  html body #products .product {
+    margin: 20px 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
